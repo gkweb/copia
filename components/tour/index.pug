@@ -1,0 +1,23 @@
+mixin tour(props)
+  section(data-component='tour')
+    .tour-title
+      h2!=props.title
+    .tour-content
+      .tour-row
+        .tour-date
+          .date!='12 JAN'
+          .day!='Thu'
+        .tour-location
+          !='Some name'
+        .tour-actions
+          a(href='#')!='TICKETS'
+          a(href='#')!='RSVP'
+      .tour-row
+        .tour-date
+          .date!='12 JAN'
+          .day!='Thu'
+        .tour-location
+          !='Some name'
+        .tour-actions
+          a(href='#')!='TICKETS'
+          a(href='#')!='RSVP'

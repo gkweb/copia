@@ -1,0 +1,26 @@
+@import '../logo/';
+
+/* Home component styling and structure */
+
+@custom-media --home-breakpoint-1 (width >= 64em);
+
+[data-component=home] {
+  height: 100vh;
+  position: relative;
+  & .inner-bg {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: .6;
+  }
+  & .inner-content {
+    display: flex;
+    height: 100%;
+  }
+}

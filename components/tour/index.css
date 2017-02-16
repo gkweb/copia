@@ -1,0 +1,91 @@
+/* Tour component styling and structure */
+
+@custom-media --tour-breakpoint-1 (width >= 64em);
+@custom-media --tour-breakpoint-2 (width < 64em);
+
+[data-component=tour] {
+  & .tour-title {
+    margin: 0 auto;
+    max-width: 46em;
+    & h2 {
+      margin: 0 0 .5em 0;
+    }
+  }
+  & .tour-content {
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    max-width: 46em;
+    margin: 0 auto;
+    padding: 2em 1em .5em;
+    & .tour-row {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      border-bottom: 1px solid #666;
+      margin-bottom: 1em;
+
+      @media (--tour-breakpoint-1) {
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      @media (--tour-breakpoint-2) {
+        flex-wrap: wrap;
+      }
+      & > div {
+        padding-bottom: 1.5em;
+        padding-top: .5em;
+      }
+      & .tour-date {
+        text-transform: uppercase;
+        @media (--tour-breakpoint-1) {
+          flex-basis: 30%;
+        }
+        & > div {
+          @media (--tour-breakpoint-1) {
+            display: inline-block;
+            width: 50%;
+          }
+        }
+        & .date {
+          text-transform: uppercase;
+        }
+      }
+      & .tour-location {
+        @media (--tour-breakpoint-1) {
+          flex-basis: 50%;
+        }
+        & > a {
+          text-decoration: none;
+          &:hover,
+          &:focus {
+            text-decoration: underline;
+          }
+        }
+      }
+      & .tour-actions {
+        text-align: right;
+        & > a {
+          display: inline-block;
+          padding: .5em;
+          background-color: #c5a78b;
+          color: #fef5eb;
+          text-decoration: none;
+          transition: background-color .2s ease;
+          &:not(:last-child) {
+            margin-right: .2em;
+          }
+          &:focus {
+            outline: 0;
+          }
+          &:hover,
+          &:focus {
+            background-color: #9e8064;
+          }
+        }
+      }
+      & > div {
+        display: flex;
+      }
+    }
+  }
+}

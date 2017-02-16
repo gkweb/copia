@@ -1,0 +1,7 @@
+include ../logo/index
+
+mixin home(props)
+  section(data-component='home')
+    .inner-bg(style=`background-image: url(${props.bg})`)
+    .inner-content
+      +logo(props.logo)

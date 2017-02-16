@@ -1,0 +1,12 @@
+/* Logo component styling and structure */
+
+[data-component=logo] {
+  margin: 0 auto 2em;
+  max-width: 33em;
+  width: 100%;
+  & .logo {
+    width: 100%;
+    height: 100%;
+    fill: #e5c7ab;
+  }
+}

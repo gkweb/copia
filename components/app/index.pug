@@ -1,0 +1,39 @@
+include ../home/index
+include ../navigation/index
+include ../tour/index
+
+doctype html
+html
+  head
+    title!= props.title
+    meta(name='viewport', content='width=device-width, initial-scale=1, user-scalable=no')
+    meta(name="description" content=props.meta.description)
+    meta(name="keywords" content=props.meta.keywords)
+    meta(property="og:title" content=props.meta.title)
+    meta(property="og:description" content=props.meta.description)
+    meta(property="og:image" content=props.meta.image)
+    meta(property="og:url" content=props.meta.siteUrl)
+    meta(name="twitter:card" content="summary")
+    meta(name="twitter:site" content="")
+    link(rel="icon" href="/content/favicon.ico")
+    link(rel="apple-touch-icon" href="/content/apple-touch-icon.png")
+    script(src='/bundle/bundle.js')
+    link(href='/bundle/bundle.css', rel='stylesheet', type='text/css')
+    //- Google Tag Manager
+    script.
+      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PZ6NPVX');
+    //- End Google Tag Manager
+
+    each l in props.externalLinks
+      link&attributes(l.attributes)
+  body
+    //- Google Tag Manager (noscript)
+    noscript
+      iframe(src="https://www.googletagmanager.com/ns.html?id=GTM-PZ6NPVX" height="0" width="0" style="display:none;visibility:hidden")
+    //- End Google Tag Manager (noscript)
+    .inner-bg(style=`background-image: url(${props.home.bg})`)
+    main.inner-content
+      +navigation(props.navigation)
+      +logo(props.home.logo)
+      +tour(props.tour)
+    //- +home(props.home)
