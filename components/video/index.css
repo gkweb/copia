@@ -5,13 +5,13 @@
 @custom-media --home-breakpoint-1 (width >= 64em);
 @custom-media --home-breakpoint-2 (width < 64em);
 
-@keyframes homeFadeIn {
+@keyframes videoFadeIn {
   from {
     opacity: 0;
   }
 }
 
-@keyframes homeScaleIn {
+@keyframes videoScaleIn {
   from {
     transform: scale(0);
   }
@@ -23,7 +23,7 @@
   }
 }
 
-[data-component=home] {
+[data-component=video] {
   &[aria-hidden=true] {
     display: none;
   }
@@ -39,54 +39,29 @@
     align-items: center;
     justify-content: space-between;
     background-color: rgba(0, 0, 0, .6);
-    animation-name: homeFadeIn, homeScaleIn;
+    animation-name: videoFadeIn, videoScaleIn;
     animation-duration: 1.5s, .6s;
     animation-timing-function: ease, ease;
     animation-fill-mode: backwards, backwards;
     animation-iteration-count: 1, 1;
-    animation-delay: .9s, .9s;
-    & h2 {
-      margin: 0 0 1em 0;
-    }
+    animation-delay: 1.1s, 1.1s;
     & > div {
       display: flex;
       align-items: center;
       flex-basis: 100%;
-      @media (--home-breakpoint-1) {
-        flex-basis: 47%;
-      }
-      & > img {
+    }
+    & .video-container {
+      width: 100%;
+      position: relative;
+      padding-bottom: 51.65%;
+      & > iframe {
         display: block;
         width: 100%;
         height: 100%;
-        max-width: 25em;
-        max-height: 25em;
-        @media (--home-breakpoint-2) {
-          margin: 0 auto 1em;
-        }
+        position: absolute;
+        top: 0;
+        left: 0;
       }
-    }
-    & .pre-btn {
-      display: block;
-      padding: 1em 2em;
-      text-decoration: none;
-      text-align: center;
-      background-color: #c5a78b;
-      color: #fef5eb;
-      font-weight: bold;
-      transition: background-color .2s ease;
-      &:focus {
-        outline: 0;
-      }
-      &:hover,
-      &:focus {
-        background-color: #9e8064;
-      }
-    }
-    & .inner-col-2 {
-      flex-direction: column;
-      flex-wrap: wrap;
-      justify-content: center;
     }
   }
 }

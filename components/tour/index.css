@@ -55,8 +55,10 @@
       display: flex;
       flex-direction: column;
       width: 100%;
-      border-bottom: 1px solid #666;
-      margin-bottom: 1em;
+      &:not(:last-child) {
+        margin-bottom: 1em;
+        border-bottom: 1px solid #666;
+      }
 
       @media (--tour-breakpoint-1) {
         flex-direction: row;
@@ -73,16 +75,17 @@
       & .tour-date {
         text-transform: uppercase;
         @media (--tour-breakpoint-1) {
-          flex-basis: 20%;
+          flex-basis: 10%;
         }
         & > div {
           @media (--tour-breakpoint-1) {
             display: inline-block;
-            width: 50%;
+            width: 100%;
           }
         }
         & .date {
           text-transform: uppercase;
+          font-weight: bold;
         }
       }
       & .tour-venue {
@@ -106,10 +109,11 @@
         text-align: right;
         & > a {
           display: inline-block;
-          padding: .5em;
+          padding: .5em 1em;
           background-color: #c5a78b;
           color: #fef5eb;
           text-decoration: none;
+          font-weight: bold;
           transition: background-color .2s ease;
           &:not(:last-child) {
             margin-right: .2em;

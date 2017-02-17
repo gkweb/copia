@@ -31,7 +31,7 @@
 
 [data-component=logo] {
   position: relative;
-  margin: 0 auto 2em;
+  margin: 2em auto;
   max-width: 19.8125em;
   max-height: 5.265625em;
   width: 100%;

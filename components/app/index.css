@@ -2,6 +2,7 @@
 @import '../navigation/';
 @import '../tour/';
 @import '../social/';
+@import '../video/';
 
 @custom-media --app-breakpoint-1 (width < 64em);
 

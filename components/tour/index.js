@@ -45,11 +45,11 @@ export default class Tour {
           <div class="tour-row" style="animation-delay: ${delay}s;">
             <div class="tour-date">
             <div class="date">${dayInMonth} ${month}</div>
-            <div class="day">${day}</div></div>
+            </div>
             <div class="tour-venue">${item.venue.name}</div>
             <div class="tour-location">${item.venue.city}, ${item.venue.country}</div>
             <div class="tour-actions">
-            <a href="${item.offers[0].url}" target="_blank">TICKETS</a>
+            <a href="${item.offers[0].url}" target="_blank">Tickets</a>
             <a href="${item.url}" target="_blank">RSVP</a></div>
           </div>`
       }

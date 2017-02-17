@@ -74,6 +74,10 @@ let content = {
       },
       bg: '/content/images/bg-image.jpg'
     },
+    video: {
+      title: 'Video',
+      src: 'https://www.youtube.com/embed/wbJIKc3aH2s?rel=0'
+    },
     tour: {
       title: 'Tour'
     }

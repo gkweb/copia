@@ -5,7 +5,7 @@
 [data-component=navigation] {
   & ul {
     padding: 0;
-    margin: 0 auto 1em;
+    margin: 0 auto;
     max-width: 40em;
     list-style: none;
     text-align: center;
