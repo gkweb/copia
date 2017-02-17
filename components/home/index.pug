@@ -1,7 +1,8 @@
-include ../logo/index
-
 mixin home(props)
-  section(data-component='home')
-    .inner-bg(style=`background-image: url(${props.bg})`)
-    .inner-content
-      +logo(props.logo)
+  section#home(data-component='home', aria-hidden='true')
+    .inner
+      .inner-col-1
+        img(src=props.featuredAlbum.img.url, alt=props.featuredAlbum.img.alt)
+      .inner-col-2
+        h2!=' NEW ALBUM - Epoch'
+        a.pre-btn(href='#')!='Preorder now'

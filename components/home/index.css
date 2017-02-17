@@ -3,24 +3,89 @@
 /* Home component styling and structure */
 
 @custom-media --home-breakpoint-1 (width >= 64em);
+@custom-media --home-breakpoint-2 (width < 64em);
+
+@keyframes homeFadeIn {
+  from {
+    opacity: 0;
+  }
+}
+
+@keyframes homeScaleIn {
+  from {
+    transform: scale(0);
+  }
+  65% {
+    transform: scale(1.2);
+  }
+  75% {
+    transform: scale(.85);
+  }
+}
 
 [data-component=home] {
-  height: 100vh;
-  position: relative;
-  & .inner-bg {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    opacity: .6;
+  &[aria-hidden=true] {
+    display: none;
   }
-  & .inner-content {
+  & .inner {
     display: flex;
-    height: 100%;
+    padding: 2em;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 50em;
+    min-height: 10em;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, .6);
+    animation-name: homeFadeIn, homeScaleIn;
+    animation-duration: 1.5s, .6s;
+    animation-timing-function: ease, ease;
+    animation-fill-mode: backwards, backwards;
+    animation-iteration-count: 1, 1;
+    animation-delay: .9s, .9s;
+    & h2 {
+      margin: 0 0 1em 0;
+    }
+    & > div {
+      display: flex;
+      align-items: center;
+      flex-basis: 100%;
+      @media (--home-breakpoint-1) {
+        flex-basis: 47%;
+      }
+      & > img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        max-width: 25em;
+        max-height: 25em;
+        @media (--home-breakpoint-2) {
+          margin: 0 auto 1em;
+        }
+      }
+    }
+    & .pre-btn {
+      display: block;
+      padding: 1em 2em;
+      text-decoration: none;
+      text-align: center;
+      background-color: #c5a78b;
+      color: #fef5eb;
+      transition: background-color .2s ease;
+      &:focus {
+        outline: 0;
+      }
+      &:hover,
+      &:focus {
+        background-color: #9e8064;
+      }
+    }
+    & .inner-col-2 {
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
   }
 }

@@ -3,4 +3,4 @@ mixin navigation(props)
     ul
       each link in props.links
         li
-          a(href=link.url)!=link.text
+          a(href=link.url)&attributes(link.attributes)!=link.text

@@ -1,6 +1,8 @@
 include ../home/index
 include ../navigation/index
+include ../logo/index
 include ../tour/index
+include ../social/index
 
 doctype html
 html
@@ -35,5 +37,6 @@ html
     main.inner-content
       +navigation(props.navigation)
       +logo(props.home.logo)
+      +home(props.home)
       +tour(props.tour)
-    //- +home(props.home)
+      +social(props.social)

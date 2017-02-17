@@ -1,0 +1,8 @@
+mixin social(props)
+  section(data-component='social')
+    ul
+      each link in props.links
+        li
+          a(href=link.url)&attributes(link.attributes)
+            svg
+              use(xlink:href=link.icon.url)

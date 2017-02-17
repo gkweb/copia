@@ -1,0 +1,41 @@
+/* Social component styling and structure */
+
+@custom-media --social-breakpoint-1 (width >= 64em);
+
+[data-component=social] {
+  & ul {
+    padding: 0;
+    margin: 1em auto;
+    max-width: 40em;
+    list-style: none;
+    text-align: center;
+    & > li {
+      display: inline-block;
+      margin: 0;
+      padding: 0;
+      &:not(:last-child) {
+        margin-right: .5em;
+      }
+      & > a {
+        display: block;
+        padding: .5em;
+        width: 2.5em;
+        height: 2.5em;
+        color: black;
+        background-color: #fef5eb;
+        text-decoration: none;
+        font-weight: bold;
+        transition: background-color .5s ease;
+        &:hover,
+        &:focus {
+          background-color: rgba(255, 255, 255, .85);
+        }
+        & > svg {
+          height: 100%;
+          width: 100%;
+          fill: currentColor;
+        }
+      }
+    }
+  }
+}
