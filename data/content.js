@@ -94,7 +94,7 @@ let content = {
       title: 'Tour'
     },
     footer: {
-      text: '&copy; Copia 2017. All rights reserved.'
+      text: '&copy; COPIA 2017. All rights reserved.'
     }
   }
 }

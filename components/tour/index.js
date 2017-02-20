@@ -37,7 +37,10 @@ export default class Tour {
       for (let i = 0; i < data.length; i++) {
         let item = data[i]
         let delay = (i * 0.25)
-        let date = new Date(item.datetime)
+        let sDate = new Date(item.datetime)
+        // offset to local time
+        // http://stackoverflow.com/a/15568516
+        let date = new Date(sDate.getTime() + (sDate.getTimezoneOffset() * 60000))
         let day = this.getDay(date.getDay())
         let month = this.getMonth(date.getMonth())
         let dayInMonth = date.getDate()
