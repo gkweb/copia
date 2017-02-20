@@ -30,10 +30,6 @@ html
     each l in props.externalLinks
       link&attributes(l.attributes)
   body
-    //- Google Tag Manager (noscript)
-    noscript
-      iframe(src="https://www.googletagmanager.com/ns.html?id=GTM-PZ6NPVX" height="0" width="0" style="display:none;visibility:hidden")
-    //- End Google Tag Manager (noscript)
     .inner-bg(style=`background-image: url(${props.home.bg})`)
     main.inner-content
       +navigation(props.navigation)
