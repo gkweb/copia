@@ -17,8 +17,11 @@
         text-decoration: none;
         display: block;
         padding: .5em;
-        color: white;
+        color: #fef5eb;
         font-weight: bold;
+        &:focus {
+          outline: 0;
+        }
         &:hover,
         &:focus {
           text-decoration: underline;

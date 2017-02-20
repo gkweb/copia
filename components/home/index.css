@@ -46,7 +46,7 @@
     animation-iteration-count: 1, 1;
     animation-delay: .9s, .9s;
     & h2 {
-      margin: 0 0 1em 0;
+      margin: 0 0 1em;
     }
     & > div {
       display: flex;
@@ -55,6 +55,17 @@
       @media (--home-breakpoint-1) {
         flex-basis: 47%;
       }
+      & a {
+        transition: opacity .5s ease;
+        &:focus {
+          outline: 0;
+        }
+        &:hover,
+        &:focus {
+          opacity: .7;
+        }
+      }
+      & a > img,
       & > img {
         display: block;
         width: 100%;
@@ -81,6 +92,9 @@
       &:hover,
       &:focus {
         background-color: #9e8064;
+      }
+      &:not(:first-child) {
+        margin-bottom: .5em;
       }
     }
     & .inner-col-2 {

@@ -31,7 +31,7 @@
 
 [data-component=logo] {
   position: relative;
-  margin: 2em auto;
+  margin: 2em auto 2.7em;
   max-width: 19.8125em;
   max-height: 5.265625em;
   width: 100%;
@@ -56,15 +56,5 @@
     left: .1em;
     fill: #633039;
     opacity: 1;
-    animation-name: logoJitter;
-    animation-duration: 5s;
-    animation-timing-function: ease;
-    animation-fill-mode: backwards;
-    animation-iteration-count: infinite;
-    animation-delay: .75s;
-    &:nth-child(1) {
-      animation-delay: 1s;
-      fill: #303634;
-    }
   }
 }

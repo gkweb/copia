@@ -10,7 +10,8 @@
     "lint:js:fix": "yarn run lint:js -- --fix",
     "lint:css": "stylelint '**/*.css'",
     "start": "node server",
-    "start:watch": "nodemon server"
+    "start:watch": "nodemon server",
+    "package": "node pakage"
   },
   "dependencies": {
     "babel-runtime": "^6.20.0",

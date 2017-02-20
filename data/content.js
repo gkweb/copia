@@ -4,7 +4,7 @@ let content = {
     meta: {
       title: 'COPIA official band website | Heavy metal band from Melbourne, Australia',
       description: '',
-      keywords: 'heavy metal, band, melbourne band, german heavy metal, hard rock, metal band, epic rock, epic metal, australian heavy metal',
+      keywords: 'copia, heavy metal, band, melbourne band, progressive rock, metalcore, alternative metal, german heavy metal, hard rock, metal band, epic rock, epic metal, australian heavy metal, CopiaNewAlbum ,Chris Blancato Audio ,Will Putney ,PRS ,KSD ,Warwick ,Mayones ,Schecter ,Ibanez ,Guitar ,Bass ,Drums ,ProTools ,DarkGlass ,BKP ,BareKnuckle ,Kemper ,AxeFx ,Orange ,TubeScreamer ,Peavy ,Amplifier ,Djent',
       image: 'http://copiaband.com/content/images/copia-og-img.jpg',
       siteUrl: 'http://copiaband.com/'
     },
@@ -67,6 +67,18 @@ let content = {
         url: '/content/symbols.svg#icon-logo'
       },
       featuredAlbum: {
+        url: '',
+        text: 'NEW ALBUM - Epoch',
+        btn: [
+          {
+          text: 'Preorder Physical',
+          url: 'http://copia.bigcartel.com/product/epoch-album'
+          },
+          {
+          text: 'Preorder Digital',
+          url: 'https://itunes.apple.com/au/album/epoch/id1206217201?ls=1&app=itunes'
+          }
+        ],
         img: {
           alt: 'Preorder COPIA - Epoch now',
           url: '/content/images/copia-epoch-400x400.jpg'

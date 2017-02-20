@@ -5,7 +5,7 @@ export default class Tour {
   constructor (options) {
     this.element = options.element
     this.content = this.element.querySelector('.tour-content')
-    this.loadingContent = this.element.querySelector('.loading')
+    this.loadingContent = this.element.querySelector('.loading-content')
     this.apiUrl = 'https://rest.bandsintown.com/artists/copia/events?app_id=squarespace-todd-wright-gxya&date=upcoming'
   }
 
@@ -15,13 +15,13 @@ export default class Tour {
   getTourData () {
     this.setLoading(true)
     fetch(this.apiUrl, {
-      method: 'get',
+      method: 'get'
     }).then((response, d) => {
       response.json().then(data => {
         this.setTourData(data)
       })
     })
-    .catch(err => {
+    .catch((err) => {
       // Error :(
       this.loadingContent.innerHTML = 'Error loading shows. Please try again later.'
     })

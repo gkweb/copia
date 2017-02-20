@@ -26,6 +26,9 @@
         text-decoration: none;
         font-weight: bold;
         transition: background-color .5s ease;
+        &:focus {
+          outline: 0;
+        }
         &:hover,
         &:focus {
           background-color: rgba(255, 255, 255, .85);

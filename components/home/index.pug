@@ -4,5 +4,6 @@ mixin home(props)
       .inner-col-1
         img(src=props.featuredAlbum.img.url, alt=props.featuredAlbum.img.alt)
       .inner-col-2
-        h2!=' NEW ALBUM - Epoch'
-        a.pre-btn(href='#')!='Preorder now'
+        h2!=props.featuredAlbum.text
+        each link in props.featuredAlbum.btn
+          a.pre-btn(href=link.url, target='_blank')!=link.text

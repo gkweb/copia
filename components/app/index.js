@@ -11,12 +11,13 @@ const hurdler = new Hurdler()
 domready(() => {
   let home = new Home({element: document.querySelector('[data-component=home]')})
   let tour = new Tour({element: document.querySelector('[data-component=tour]')})
-  let video = new Tour({element: document.querySelector('[data-component=video]')})
+  let video = new Video({element: document.querySelector('[data-component=video]')})
   hurdler.addHurdle({
     test: element => {
       return element.id === 'home'
     },
     onJump: element => {
+      ga('send', 'pageview', {'page': location.pathname + location.search  + location.hash})
       tour.disable()
       home.enable()
       video.enable()
@@ -27,6 +28,7 @@ domready(() => {
       return element.id === 'tour'
     },
     onJump: element => {
+      ga('send', 'pageview', {'page': location.pathname + location.search  + location.hash})
       home.disable()
       video.disable()
       tour.enable()
