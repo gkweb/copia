@@ -1,0 +1,10 @@
+/* Footer component styling and structure */
+
+[data-component=footer] {
+  text-align: center;
+  margin-top: 2em;
+  & > p {
+    margin: 0;
+    color: #ddd;
+  }
+}

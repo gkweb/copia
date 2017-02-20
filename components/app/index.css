@@ -3,6 +3,7 @@
 @import '../tour/';
 @import '../social/';
 @import '../video/';
+@import '../footer/';
 
 @custom-media --app-breakpoint-1 (width < 64em);
 
