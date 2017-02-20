@@ -5,7 +5,7 @@ let content = {
       title: 'COPIA official band website | Heavy metal band from Melbourne, Australia',
       description: '',
       keywords: 'copia, heavy metal, band, melbourne band, progressive rock, metalcore, alternative metal, german heavy metal, hard rock, metal band, epic rock, epic metal, australian heavy metal, CopiaNewAlbum ,Chris Blancato Audio ,Will Putney ,PRS ,KSD ,Warwick ,Mayones ,Schecter ,Ibanez ,Guitar ,Bass ,Drums ,ProTools ,DarkGlass ,BKP ,BareKnuckle ,Kemper ,AxeFx ,Orange ,TubeScreamer ,Peavy ,Amplifier ,Djent',
-      image: 'http://copiaband.com/content/images/copia-og-img.jpg',
+      image: 'http://copiaband.com/content/images/og-share-1200x630.jpg',
       siteUrl: 'http://copiaband.com/'
     },
     externalLinks: [
