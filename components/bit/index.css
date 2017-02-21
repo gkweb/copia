@@ -1,0 +1,6 @@
+/* Bit component styling and structure */
+
+[data-component=bit] {
+  display: flex;
+  margin: 0 auto 1em;
+}
