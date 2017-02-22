@@ -34,6 +34,13 @@ let content = {
           attributes: {
             target: '_blank'
           }
+        },
+        {
+          text: 'Contact',
+          url: 'mailto:copiaband@gmail.com',
+          attributes: {
+            target: '_blank'
+          }
         }
       ]
     },
@@ -57,6 +64,26 @@ let content = {
           },
           icon: {
             url: '/content/symbols.svg#youtube-icon'
+          }
+        },
+        {
+          text: 'Instagram',
+          url: 'https://www.instagram.com/copiaband/',
+          attributes: {
+            target: '_blank'
+          },
+          icon: {
+            url: '/content/symbols.svg#instagram-icon'
+          }
+        },
+        {
+          text: 'Twitter',
+          url: 'https://twitter.com/copiaband',
+          attributes: {
+            target: '_blank'
+          },
+          icon: {
+            url: '/content/symbols.svg#twitter-icon'
           }
         }
       ]
