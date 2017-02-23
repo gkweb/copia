@@ -36,6 +36,13 @@ let content = {
           }
         },
         {
+          text: 'Subscribe',
+          url: 'http://eepurl.com/CC0sz',
+          attributes: {
+            target: '_blank'
+          }
+        },
+        {
           text: 'Contact',
           url: 'mailto:copiaband@gmail.com',
           attributes: {
