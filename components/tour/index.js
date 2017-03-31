@@ -44,6 +44,13 @@ export default class Tour {
         let day = this.getDay(date.getDay())
         let month = this.getMonth(date.getMonth())
         let dayInMonth = date.getDate()
+        let ticketUrl = `<a style='opacity:0'>Tickets</a>`
+
+        // set url
+        if (typeof item.offers[0] === 'object') {
+          if (item.offers[0].hasOwnProperty('url')) ticketUrl = `<a href="${item.offers[0].url}" target="_blank">Tickets</a>`
+        }
+
         content += `
           <div class="tour-row" style="animation-delay: ${delay}s;">
             <div class="tour-date">
@@ -52,7 +59,7 @@ export default class Tour {
             <div class="tour-venue">${item.venue.name}</div>
             <div class="tour-location">${item.venue.city}, ${item.venue.country}</div>
             <div class="tour-actions">
-            <a href="${item.offers[0].url}" target="_blank">Tickets</a>
+            ${ticketUrl}
             <a href="${item.url}" target="_blank">RSVP</a></div>
           </div>`
       }

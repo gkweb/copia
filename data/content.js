@@ -122,7 +122,7 @@ let content = {
     },
     video: {
       title: 'Video',
-      src: 'https://www.youtube.com/embed/wbJIKc3aH2s?rel=0'
+      src: 'https://www.youtube.com/embed/PJeQU-Ax2hM?rel=0'
     },
     tour: {
       title: 'Tour'
