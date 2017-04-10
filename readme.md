@@ -1,5 +1,5 @@
 ## Copia band website source.
-[copiaband.com]
+[Live site here](http://copiaband.com)
 
 Two page site that also incorporates and feeds in bandsintown data using fetch API.
 
