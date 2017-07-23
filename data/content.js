@@ -105,11 +105,11 @@ let content = {
         text: 'NEW ALBUM - Epoch',
         btn: [
           {
-          text: 'Preorder Physical',
+          text: 'Buy Physical',
           url: 'http://copia.bigcartel.com/product/epoch-album'
           },
           {
-          text: 'Preorder Digital',
+          text: 'Buy Digital',
           url: 'https://itunes.apple.com/au/album/epoch/id1206217201?ls=1&app=itunes'
           }
         ],
