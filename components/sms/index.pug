@@ -1,0 +1,9 @@
+mixin sms(props)
+  section#sms(data-component='sms', aria-hidden='true')
+    .inner
+        h2!=props.title
+        p!=props.body
+        ul.nums-container
+          each num in props.numbers
+            li
+              a.pre-btn(href='tel:' + num.phone, target='_blank')= num.title + ': ' + num.phone

@@ -1,8 +1,8 @@
 let content = {
   props: {
-    title: 'COPIA | Heavy metal band from Melbourne, Australia',
+    title: 'COPIA | Metal band from Melbourne, Australia',
     meta: {
-      title: 'COPIA official band website | Heavy metal band from Melbourne, Australia',
+      title: 'COPIA official band website | Metal band from Melbourne, Australia',
       description: '',
       keywords: 'copia, heavy metal, band, melbourne band, progressive rock, metalcore, alternative metal, german heavy metal, hard rock, metal band, epic rock, epic metal, australian heavy metal, CopiaNewAlbum ,Chris Blancato Audio ,Will Putney ,PRS ,KSD ,Warwick ,Mayones ,Schecter ,Ibanez ,Guitar ,Bass ,Drums ,ProTools ,DarkGlass ,BKP ,BareKnuckle ,Kemper ,AxeFx ,Orange ,TubeScreamer ,Peavy ,Amplifier ,Djent',
       image: 'http://copiaband.com/content/images/og-share-1200x630.jpg',
@@ -105,12 +105,12 @@ let content = {
         text: 'NEW ALBUM - Epoch',
         btn: [
           {
-          text: 'Buy Physical',
-          url: 'http://copia.bigcartel.com/product/epoch-album'
+            'text': 'Buy Physical',
+            'url': 'http://copia.bigcartel.com/product/epoch-album'
           },
           {
-          text: 'Buy Digital',
-          url: 'https://itunes.apple.com/au/album/epoch/id1206217201?ls=1&app=itunes'
+            'text': 'Buy Digital',
+            'url': 'https://itunes.apple.com/au/album/epoch/id1206217201?ls=1&app=itunes'
           }
         ],
         img: {
@@ -119,6 +119,32 @@ let content = {
         }
       },
       bg: '/content/images/bg-image.jpg'
+    },
+    sms: {
+      'title': 'Want to hear when Copia are performing near you?',
+      'body': 'Text your closest city (or cities) name to your country\'s number and receive tour dates directly to your phone!',
+      'numbers': [
+        {
+          'title': 'DE',
+          'phone': '+49177 17816878'
+        },
+        {
+          'title': 'NL',
+          'phone': '+3197004499559'
+        },
+        {
+          'title': 'CH',
+          'phone': '+41766013374'
+        },
+        {
+          'title': 'BE',
+          'phone': '+32460210368'
+        },
+        {
+          'title': 'AUT',
+          'phone': '+43676800800707'
+        }
+      ]
     },
     video: {
       title: 'Video',

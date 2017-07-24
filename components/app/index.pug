@@ -1,4 +1,5 @@
 include ../home/index
+include ../sms/index
 include ../navigation/index
 include ../logo/index
 include ../tour/index
@@ -35,6 +36,7 @@ html
     main.inner-content
       +navigation(props.navigation)
       +logo(props.home.logo)
+      +sms(props.sms)
       +home(props.home)
       +tour(props.tour)
       +video(props.video)
