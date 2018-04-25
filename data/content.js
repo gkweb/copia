@@ -148,7 +148,7 @@ let content = {
     },
     video: {
       title: 'Video',
-      src: 'https://www.youtube.com/embed/PJeQU-Ax2hM?rel=0'
+      src: 'https://www.youtube.com/embed/n1qw9gM9V9c?rel=0'
     },
     tour: {
       title: 'Tour'

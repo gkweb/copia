@@ -63,6 +63,8 @@ export default class Tour {
             <a href="${item.url}" target="_blank">RSVP</a></div>
           </div>`
       }
+
+      if (content.length <= 0) content = '<p>No shows currently scheduled.</p>'
       this.content.innerHTML = content
       this.setLoading(false)
     }
