@@ -2,6 +2,7 @@ include ../home/index
 include ../sms/index
 include ../navigation/index
 include ../logo/index
+include ../hero/index
 include ../tour/index
 include ../bit/index
 include ../social/index
@@ -35,7 +36,8 @@ html
     .inner-bg(style=`background-image: url(${props.home.bg})`)
     main.inner-content
       +navigation(props.navigation)
-      +logo(props.home.logo)
+      +hero(props.home.hero)
+      //- +logo(props.home.logo)
       +sms(props.sms)
       +home(props.home)
       +tour(props.tour)

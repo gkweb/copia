@@ -1,0 +1,7 @@
+mixin hero (props)
+  section(data-component='hero', style='background-image: url("' + props.bg + '")')
+    div
+      .hero-logo-container
+        img.hero-logo(src=props.url)
+        img.hero-logo-glitch.violet(src=props.urlViolet)
+        img.hero-logo-glitch.green(src=props.urlGreen)

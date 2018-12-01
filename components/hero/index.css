@@ -1,0 +1,94 @@
+@keyframes HeroClip {
+	28%, 31% {
+    clip: none;
+    left: 0;
+    visibility: visible;
+  }
+  30% {
+    clip: rect(60px, 999px, 80px, 0px);
+    left: -5px;
+  }
+    48%, 52%{
+    clip: none;
+    left: 0;
+    visibility: visible;
+  }
+  50% {
+    clip: rect(30px, 999px, 55px, 0px);
+    left: 5px;
+  }
+}
+
+@keyframes HeroGlitch {
+  31%, 32%{
+    transform: translate(-7px,7px);
+  }
+  32%,33%{
+    transform: translate(7px,-7px);
+  }
+  31%,33%{
+    transform: translatex(0);
+  }
+
+  // SECOND GLITCH
+  49%, 52%{
+    transform: translatex(0);
+  }
+  50%{
+    transform: translate(7px,7px);
+  }
+  51%{
+    transform: translate(-7px,-7px);
+  }
+}
+
+[data-component="hero"] {
+  width: 100%;
+  height: 100vh;
+  min-height: 40em;
+  color: white;
+  text-align: center;
+  background-color: black;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+
+  & > div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+
+  & .hero-logo-container {
+    display: block;
+    width: calc(100% - 2em);
+    position: relative;
+  }
+
+  & .hero-logo {
+    display: block;
+    height: auto;
+    position: relative;
+    z-index: 10;
+  }
+
+  & .hero-logo-glitch {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: .75;
+    z-index: 1;
+    animation: HeroGlitch 8s infinite;
+
+    &.violet {
+      animation-delay: 1s;
+      animation: HeroGlitch 8s infinite;
+      animation-direction: reverse;
+      left: 0;
+      z-index: 2;
+    }
+  }
+}

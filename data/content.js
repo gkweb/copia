@@ -100,6 +100,12 @@ let content = {
       logo: {
         url: '/content/symbols.svg#icon-logo'
       },
+      hero: {
+        url: '/content/logo.svg',
+        urlViolet: '/content/logo-green.svg',
+        urlGreen: '/content/logo-violet.svg',
+        bg: '/content/hero-bg.jpg'
+      },
       featuredAlbum: {
         url: '',
         text: 'NEW ALBUM - Epoch',
