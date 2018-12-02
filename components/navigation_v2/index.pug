@@ -1,0 +1,23 @@
+include ../social/index
+
+mixin navigation_v2 (props)
+  section(data-component='navigation_v2', data-loaded="false")
+    nav.menu_launcher
+      ul.social
+        each link in props.social_links
+          li
+            a(href=link.url)&attributes(link.attributes)
+              svg
+                use(xlink:href=link.icon.url)
+      a#menu.menu(href='#menu', aria-controls='menu-overlay', aria-expanded='false')
+        svg.open
+          use(xlink:href='/content/symbols.svg#menu-icon')
+        svg.close
+          use(xlink:href='/content/symbols.svg#close-icon')
+
+  section#menu-overlay(data-component='navigation_overlay_v2', hidden)
+    nav#menu_main.menu_main
+      ul
+        each link in props.menu_links
+          li
+            a(href=link.url)&attributes(link.attributes)!=link.text

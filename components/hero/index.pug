@@ -1,5 +1,5 @@
 mixin hero (props)
-  section(data-component='hero', style='background-image: url("' + props.bg + '")')
+  section(data-component='hero', aria-hidden='true', style='background-image: url("' + props.bg + '")', data-loaded="false")
     div
       .hero-logo-container
         img.hero-logo(src=props.url)

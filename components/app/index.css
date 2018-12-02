@@ -1,14 +1,15 @@
+@import '../loading/';
 @import '../home/';
 @import '../sms/';
 @import '../hero/';
-@import '../navigation/';
+@import '../navigation_v2/';
 @import '../tour/';
 @import '../bit/';
 @import '../social/';
 @import '../video/';
 @import '../footer/';
 
-@custom-media --app-breakpoint-1 (width < 64em);
+@custom-media --app-breakpoint-1 (width < 40em);
 
 html {
   padding: 0;
@@ -27,9 +28,6 @@ body {
   color: #fef5eb;
   background-color: black;
   position: relative;
-  @media (--app-breakpoint-1) {
-    padding: 1em;
-  }
 }
 
 * {
@@ -42,6 +40,7 @@ body {
 }
 
 .inner-bg {
+  background-image: linear-gradient(180deg, #111, #999);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

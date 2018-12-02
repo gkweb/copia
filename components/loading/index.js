@@ -1,11 +1,10 @@
-export default class Home {
+export default class Loading {
   /**
    * @param {Object} options - Component options
    */
   constructor (options) {
     this.element = options.element
     if (!this.element) return
-    this.element.dataset.loaded = 'true'
   }
 
   /**

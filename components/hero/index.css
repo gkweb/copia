@@ -1,3 +1,20 @@
+@custom-media --hero-breakpoint-1 (width >= 40em);
+@custom-media --hero-breakpoint-2 (width < 40em);
+
+@keyframes HeroInTop {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+}
+
+@keyframes HeroFadeIn {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+}
+
 @keyframes HeroClip {
 	28%, 31% {
     clip: none;
@@ -30,7 +47,6 @@
     transform: translatex(0);
   }
 
-  // SECOND GLITCH
   49%, 52%{
     transform: translatex(0);
   }
@@ -46,12 +62,34 @@
   width: 100%;
   height: 100vh;
   min-height: 40em;
+  margin-bottom: 2em;
   color: white;
   text-align: center;
   background-color: black;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+
+  &[aria-hidden=true] {
+    display: none;
+  }
+
+  @media screen and (--hero-breakpoint-2) {
+    height: 60vh;
+    min-height: 1px;
+  }
+
+  &[data-loaded=true] {
+    &:not([aria-hidden=true]) .hero-logo-container {
+      animation: HeroInTop ease 1s;
+      animation-fill-mode: both;
+    }
+
+    &:not([aria-hidden=true]) .hero-logo-container {
+      animation: HeroInTop ease 1s;
+      animation-fill-mode: both;
+    }
+  }
 
   & > div {
     display: flex;
@@ -64,6 +102,7 @@
   & .hero-logo-container {
     display: block;
     width: calc(100% - 2em);
+    max-width: 120em;
     position: relative;
   }
 
@@ -82,11 +121,14 @@
     opacity: .75;
     z-index: 1;
     animation: HeroGlitch 8s infinite;
+    animation-fill-mode: both;
+    animation-delay: 2s;
 
     &.violet {
       animation-delay: 1s;
       animation: HeroGlitch 8s infinite;
       animation-direction: reverse;
+      animation-fill-mode: both;
       left: 0;
       z-index: 2;
     }

@@ -6,13 +6,28 @@
   }
 }
 
-@custom-media --tour-breakpoint-1 (width >= 64em);
-@custom-media --tour-breakpoint-2 (width < 64em);
+@custom-media --tour-breakpoint-1 (width >= 40em);
+@custom-media --tour-breakpoint-2 (width < 40em);
 
-[data-component=tour] {
+[data-component="tour"] {
   &[aria-hidden=true] {
     display: none;
   }
+
+  padding: 0 1em;
+  margin-top: 5em;
+  min-height: 10em;
+
+  & .logo {
+    display: block;
+    width: 100%;
+    height: 100%;
+    max-width: 19.8125em;
+    max-height: 5.265625em;
+    margin: 0 auto 3em;
+    fill: #e5c7ab;
+  }
+
   & .tour-title {
     margin: 0 auto;
     max-width: 46em;

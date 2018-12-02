@@ -4,6 +4,8 @@ export default class Tour {
    */
   constructor (options) {
     this.element = options.element
+    if (!this.element) return
+    this.element.dataset.loaded = 'true'
     this.content = this.element.querySelector('.tour-content')
     this.loadingContent = this.element.querySelector('.loading-content')
     this.apiUrl = 'https://rest.bandsintown.com/artists/copia/events?app_id=squarespace-todd-wright-gxya&date=upcoming'

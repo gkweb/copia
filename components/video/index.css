@@ -1,27 +1,7 @@
-@import '../logo/';
+/* Video component styling and structure */
 
-/* Home component styling and structure */
-
-@custom-media --home-breakpoint-1 (width >= 64em);
-@custom-media --home-breakpoint-2 (width < 64em);
-
-@keyframes videoFadeIn {
-  from {
-    opacity: 0;
-  }
-}
-
-@keyframes videoScaleIn {
-  from {
-    transform: scale(0);
-  }
-  65% {
-    transform: scale(1.2);
-  }
-  75% {
-    transform: scale(.85);
-  }
-}
+@custom-media --home-breakpoint-1 (width >= 40em);
+@custom-media --home-breakpoint-2 (width < 40em);
 
 [data-component=video] {
   &[aria-hidden=true] {
@@ -39,12 +19,7 @@
     align-items: center;
     justify-content: space-between;
     background-color: rgba(0, 0, 0, .6);
-    animation-name: videoFadeIn, videoScaleIn;
-    animation-duration: 1.5s, .6s;
-    animation-timing-function: ease, ease;
-    animation-fill-mode: backwards, backwards;
-    animation-iteration-count: 1, 1;
-    animation-delay: 1.1s, 1.1s;
+
     & > div {
       display: flex;
       align-items: center;

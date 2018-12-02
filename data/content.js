@@ -51,6 +51,97 @@ let content = {
         }
       ]
     },
+    navigation_v2: {
+      launcher_links: [
+        {
+          text: 'Menu',
+          url: '#menu',
+          attributes: false
+        }
+      ],
+      social_links: [
+        {
+          text: 'Facebook',
+          url: 'https://www.facebook.com/copiaband/',
+          attributes: {
+            target: '_blank'
+          },
+          icon: {
+            url: '/content/symbols.svg#facebook-icon'
+          }
+        },
+        {
+          text: 'Youtube',
+          url: 'https://www.youtube.com/user/copiaband',
+          attributes: {
+            target: '_blank'
+          },
+          icon: {
+            url: '/content/symbols.svg#youtube-icon'
+          }
+        },
+        {
+          text: 'Instagram',
+          url: 'https://www.instagram.com/copiaband/',
+          attributes: {
+            target: '_blank'
+          },
+          icon: {
+            url: '/content/symbols.svg#instagram-icon'
+          }
+        },
+        {
+          text: 'Twitter',
+          url: 'https://twitter.com/copiaband',
+          attributes: {
+            target: '_blank'
+          },
+          icon: {
+            url: '/content/symbols.svg#twitter-icon'
+          }
+        }
+      ],
+      menu_links: [
+        {
+          text: 'Home',
+          url: '/#/home',
+          attributes: {
+            style: 'animation-delay: 0s'
+          }
+        },
+        {
+          text: 'Tour',
+          url: '#/tour',
+          attributes: {
+            style: 'animation-delay: .0625s'
+          }
+        },
+        {
+          text: 'Shop',
+          url: 'http://www.copia.bigcartel.com/',
+          attributes: {
+            target: '_blank',
+            style: 'animation-delay: 0.125s'
+          }
+        },
+        {
+          text: 'Subscribe',
+          url: 'http://eepurl.com/CC0sz',
+          attributes: {
+            target: '_blank',
+            style: 'animation-delay: .1875s'
+          }
+        },
+        {
+          text: 'Contact',
+          url: 'mailto:copiaband@gmail.com',
+          attributes: {
+            target: '_blank',
+            style: 'animation-delay: .25s'
+          }
+        }
+        ]
+    },
     social: {
       links: [
         {
@@ -157,7 +248,8 @@ let content = {
       src: 'https://www.youtube.com/embed/n1qw9gM9V9c?rel=0'
     },
     tour: {
-      title: 'Tour'
+      title: 'Tour',
+      logoUrl: '/content/symbols.svg#icon-logo'
     },
     footer: {
       text: '&copy; COPIA 2017. All rights reserved.'

@@ -1,6 +1,0 @@
-mixin navigation(props)
-  section(data-component='navigation')
-    ul
-      each link in props.links
-        li
-          a(href=link.url)&attributes(link.attributes)!=link.text

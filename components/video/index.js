@@ -4,6 +4,8 @@ export default class Video {
    */
   constructor (options) {
     this.element = options.element
+    if (!this.element) return
+    this.element.dataset.loaded = 'true'
   }
 
   /**

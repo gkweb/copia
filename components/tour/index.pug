@@ -1,5 +1,7 @@
 mixin tour(props)
-  section.loading#tour(data-component='tour', aria-hidden='true')
+  section.loading#tour(data-component='tour', aria-hidden='true', data-loaded="false")
+    svg.logo
+      use(xlink:href=props.logoUrl)
     .tour-title
       h2!=props.title
     .loading-content!='loading...'

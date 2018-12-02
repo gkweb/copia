@@ -1,5 +1,5 @@
 mixin sms(props)
-  section#sms(data-component='sms', aria-hidden='true')
+  section#sms(data-component='sms', aria-hidden='true', data-loaded="false")
     .inner
         h2!=props.title
         p!=props.body

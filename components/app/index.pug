@@ -1,13 +1,13 @@
 include ../home/index
 include ../sms/index
-include ../navigation/index
-include ../logo/index
+include ../navigation_v2/index
 include ../hero/index
 include ../tour/index
 include ../bit/index
 include ../social/index
 include ../video/index
 include ../footer/index
+include ../loading/index
 
 doctype html
 html
@@ -33,11 +33,11 @@ html
     each l in props.externalLinks
       link&attributes(l.attributes)
   body
-    .inner-bg(style=`background-image: url(${props.home.bg})`)
+    +loading()
+    .inner-bg
     main.inner-content
-      +navigation(props.navigation)
+      +navigation_v2(props.navigation_v2)
       +hero(props.home.hero)
-      //- +logo(props.home.logo)
       +sms(props.sms)
       +home(props.home)
       +tour(props.tour)

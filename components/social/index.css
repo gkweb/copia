@@ -1,6 +1,6 @@
 /* Social component styling and structure */
 
-@custom-media --social-breakpoint-1 (width >= 64em);
+@custom-media --social-breakpoint-1 (width >= 40em);
 
 [data-component=social] {
   & ul {

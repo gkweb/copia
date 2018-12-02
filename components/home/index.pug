@@ -1,5 +1,5 @@
 mixin home(props)
-  section#home(data-component='home', aria-hidden='true')
+  section#home(data-component='home', aria-hidden='true', data-loaded="false")
     .inner
       .inner-col-1
         img(src=props.featuredAlbum.img.url, alt=props.featuredAlbum.img.alt)
