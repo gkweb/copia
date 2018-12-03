@@ -9,7 +9,7 @@ mixin navigation_v2 (props)
             a(href=link.url)&attributes(link.attributes)
               svg
                 use(xlink:href=link.icon.url)
-      a#menu.menu(href='#menu', aria-controls='menu-overlay', aria-expanded='false')
+      a#menu.menu(href='#menu_main', aria-controls='menu-overlay', aria-expanded='false')
         svg.open
           use(xlink:href='/content/symbols.svg#menu-icon')
         svg.close

@@ -20,6 +20,13 @@ export default class Navigation {
       this.menuElementItems[m].addEventListener('click', this.handleMenuItemClick)
     }
 
+    /**
+     * Respond to esc key when menu open
+     */
+    document.addEventListener('keyup', e => {
+      if (!this.menuOverlay.hidden && (e.keyCode === 27)) this.toggleMenu(false)
+    })
+
     this.menuElement.addEventListener('click', this.handleMenuClick)
   }
 
