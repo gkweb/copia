@@ -193,13 +193,11 @@ let content = {
       },
       hero: {
         url: '/content/logo.svg',
-        urlViolet: '/content/logo-green.svg',
-        urlGreen: '/content/logo-violet.svg',
         bg: '/content/hero-bg.jpg'
       },
       featuredAlbum: {
         url: '',
-        text: 'NEW ALBUM - Epoch',
+        text: 'ALBUM - Epoch',
         btn: [
           {
             'text': 'Buy Physical',
@@ -211,7 +209,7 @@ let content = {
           }
         ],
         img: {
-          alt: 'Preorder COPIA - Epoch now',
+          alt: 'COPIA - Epoch',
           url: '/content/images/copia-epoch-400x400.jpg'
         }
       },
