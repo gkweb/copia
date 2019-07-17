@@ -1,7 +1,6 @@
 {
   "private": true,
   "scripts": {
-    "init": "tasks/init.sh",
     "clean": "rimraf bundle",
     "prebuild": "yarn run clean",
     "build": "webpack --progress",
