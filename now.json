@@ -1,4 +1,11 @@
 {
   "version": 2,
-  "name": "copia-band"
+  "name": "copia-band",
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@now/static-build",
+      "config": { "distDir": "." }
+    }
+  ]
 }

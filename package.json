@@ -1,7 +1,7 @@
 {
   "private": true,
   "scripts": {
-    "clean": "rimraf bundle",
+    "clean": "rimraf www/bundle",
     "prebuild": "yarn run clean",
     "build": "webpack --progress",
     "build:watch": "yarn run build -- --watch",
@@ -10,7 +10,8 @@
     "lint:css": "stylelint '**/*.css'",
     "start": "node server",
     "start:watch": "nodemon server",
-    "package": "yarn run build && node package"
+    "package": "yarn run build && node package",
+    "now-build": "yarn package"
   },
   "dependencies": {
     "babel-runtime": "^6.20.0",

@@ -3,4 +3,6 @@ npm-debug.log
 .DS_Store
 /bundle
 .env
-/index.html
+index.html
+www/bundle
+
