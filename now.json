@@ -1,11 +1,12 @@
 {
   "version": 2,
   "name": "copia-band",
+  "alias": "copia",
   "builds": [
     {
       "src": "package.json",
       "use": "@now/static-build",
-      "config": { "distDir": "." }
+      "config": { "distDir": "www/" }
     }
   ]
 }
