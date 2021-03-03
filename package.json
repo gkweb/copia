@@ -25,7 +25,7 @@
     "fs": "0.0.1-security",
     "hurdler": "^4.0.1",
     "path": "^0.12.7",
-    "pug": "^2.0.0-beta6",
+    "pug": "^3.0.1",
     "require-dir": "^0.3.1",
     "svgxuse": "^1.1.23",
     "util": "^0.10.3",
