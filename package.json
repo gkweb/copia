@@ -18,7 +18,7 @@
     "dom4": "^1.8.3",
     "domready": "^1.0.8",
     "dotenv": "^2.0.0",
-    "express": "^4.14.0",
+    "express": "^4.17.3",
     "express-mailer": "^0.3.1",
     "express-rate-limit": "^2.6.0",
     "express-validator": "^3.0.0",
